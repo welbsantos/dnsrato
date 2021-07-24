@@ -3,7 +3,7 @@ const readline = require('readline');
 const fs = require('fs');
 
 if (!process.argv[2] || !process.argv[3]) {
-    console.log("Usage : node dnsrato.js <site.com.br> <wordlist>");
+    console.log("Usage : node dnsrato.js <url> <wordlist> <options>");
     console.log("Example : node dnsrato.js grupobusinesscorp.com rato.txt");
     console.log("Example : node dnsrato.js grupobusinesscorp.com rato.txt -verbose");
     process.exit(0);
