@@ -24,9 +24,9 @@ rl.on('line', (input) => {
     dns.lookup(hostname, function(err, result) {
 
         if (!err) {
-            console.log(`HOST ENCONTRADO: ${hostname} ====> IP: ${result}`);
+            console.log(`HOST FOUND: ${hostname} ====> IP: ${result}`);
         } else if (parameters == "-verbose") {
-            console.log(`HOST NAO ENCONTRADO: ${hostname}`);
+            console.log(`HOST NOT FOUND: ${hostname}`);
         }
         
     })
